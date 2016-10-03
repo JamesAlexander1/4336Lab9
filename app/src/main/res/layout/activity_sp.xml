@@ -9,4 +9,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="a4336.a0.lab4.james.lab9.SPActivity">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextForStore"
+        android:inputType="text"
+        android:text="Enter Text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp"
+        android:layout_alignEnd="@+id/SPDeletebutton"
+        android:layout_alignStart="@+id/SPStorebutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store"
+        android:id="@+id/SPStorebutton"
+        android:layout_below="@+id/editTextForStore"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:id="@+id/SPDeletebutton"
+        android:layout_below="@+id/SPStorebutton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/SPBackbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
