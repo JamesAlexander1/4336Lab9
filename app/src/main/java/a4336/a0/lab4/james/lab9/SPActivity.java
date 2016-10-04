@@ -19,7 +19,7 @@ public class SPActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sp);
 
-       final SharedPreferences settings = getSharedPreferences(fileName, 0);
+        final SharedPreferences settings = getSharedPreferences(fileName, 0);
         final SharedPreferences.Editor editor = settings.edit();
        // String process = settings.getString(key, "0");
 
@@ -59,9 +59,17 @@ public class SPActivity extends AppCompatActivity {
             }
         });
 
+        final Button deleteSPButton = (Button) findViewById(R.id.SPDeletebutton);
+        deleteSPButton.setOnClickListener(new View.OnClickListener(){
 
+
+            @Override
+            public void onClick(View view) {
+                deleteKeyValue(editor);
+            }
+        });
     }
-    public void RetrieveKeyValue(SharedPreferences pref){
+    private void RetrieveKeyValue(SharedPreferences pref){
 
         String process = pref.getString(key, "0");
 
@@ -73,8 +81,11 @@ public class SPActivity extends AppCompatActivity {
         retValue.setText(process);
     }
 
-    public void storeKeyValue(SharedPreferences.Editor editor, String stringInput){
+    private void storeKeyValue(SharedPreferences.Editor editor, String stringInput){
         editor.putString(key, stringInput);
         editor.commit();
+    }
+    private void deleteKeyValue(SharedPreferences.Editor editor){
+        editor.remove(key).commit();
     }
 }
