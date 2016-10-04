@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editTextForStore"
         android:inputType="text"
+        android:imeOptions="actionDone"
         android:text="Enter Text"
         android:layout_alignParentTop="true"
         android:layout_marginTop="69dp"
@@ -42,5 +43,22 @@
         android:text="@string/back"
         android:id="@+id/SPBackbutton"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retrieve"
+        android:id="@+id/SPRetbutton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current Value"
+        android:id="@+id/retValueView"
+        android:layout_below="@+id/SPRetbutton"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
