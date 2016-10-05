@@ -1,5 +1,6 @@
 package a4336.a0.lab4.james.lab9;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,7 +35,8 @@ public class ESActivity extends AppCompatActivity {
         showESButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                Intent intent = new Intent(ESActivity.this, ESstatusActivity.class);
+                startActivity(intent);
             }
         });
     }
