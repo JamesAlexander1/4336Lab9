@@ -24,5 +24,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        final Button eSButton = (Button) findViewById(R.id.goToESbutton);
+        eSButton.setOnClickListener(new View.OnClickListener(){
+
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ESActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

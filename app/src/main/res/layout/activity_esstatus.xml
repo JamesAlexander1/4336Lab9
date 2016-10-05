@@ -7,40 +7,41 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a4336.a0.lab4.james.lab9.MainActivity">
+    tools:context="a4336.a0.lab4.james.lab9.ESstatusActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/BackToESbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/james_alexander_lab_9"
-        android:id="@+id/titleTextView"
+        android:text="@string/external_storage_status"
+        android:id="@+id/ESStextView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shared_preferences"
-        android:id="@+id/SPbutton"
-        android:layout_below="@+id/titleTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/status"
+        android:id="@+id/ESstatusView"
+        android:layout_below="@+id/ESStextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
+        android:layout_marginTop="61dp" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/external_storage"
-        android:id="@+id/goToESbutton"
-        android:layout_below="@+id/SPbutton"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/size_in_megabytes"
+        android:id="@+id/sizeTextView"
+        android:layout_below="@+id/ESstatusView"
         android:layout_centerHorizontal="true" />
-
-    <MediaController
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/mediaController"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="570dp"
-        android:layout_marginBottom="84dp" />
 </RelativeLayout>

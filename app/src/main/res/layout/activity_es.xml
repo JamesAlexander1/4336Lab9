@@ -7,40 +7,39 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a4336.a0.lab4.james.lab9.MainActivity">
+    tools:context="a4336.a0.lab4.james.lab9.ESActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/james_alexander_lab_9"
-        android:id="@+id/titleTextView"
+        android:text="@string/external_storage"
+        android:id="@+id/ESTitleView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shared_preferences"
-        android:id="@+id/SPbutton"
-        android:layout_below="@+id/titleTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
+        android:text="@string/back"
+        android:id="@+id/ESBackbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/external_storage"
-        android:id="@+id/goToESbutton"
-        android:layout_below="@+id/SPbutton"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/check_storage"
+        android:id="@+id/gotoCheckSbutton"
+        android:layout_below="@+id/ESTitleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp" />
 
-    <MediaController
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mediaController"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="570dp"
-        android:layout_marginBottom="84dp" />
+        android:text="@string/store_file"
+        android:id="@+id/goToESFilebutton"
+        android:layout_below="@+id/gotoCheckSbutton"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

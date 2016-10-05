@@ -6,4 +6,11 @@
     <string name="delete">Delete</string>
     <string name="back">Back</string>
     <string name="retrieve">Retrieve</string>
+    <string name="external_storage">External Storage</string>
+    <string name="check_storage">Check Storage</string>
+    <string name="store_file">Store File</string>
+    <string name="title_activity_esstatus">ESstatusActivity</string>
+    <string name="external_storage_status">External Storage Status</string>
+    <string name="status">Status</string>
+    <string name="size_in_megabytes">Size in Megabytes</string>
 </resources>
