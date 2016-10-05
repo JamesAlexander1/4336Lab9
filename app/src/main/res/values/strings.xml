@@ -13,4 +13,6 @@
     <string name="external_storage_status">External Storage Status</string>
     <string name="status">Status</string>
     <string name="size_in_megabytes">Size in Megabytes</string>
+    <string name="adding_ap_scan_to_external_storage">Adding AP Scan To External Storage</string>
+    <string name="ap_scan">AP Scan</string>
 </resources>

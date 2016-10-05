@@ -3,6 +3,7 @@
     package="a4336.a0.lab4.james.lab9">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +20,8 @@
         </activity>
         <activity android:name=".SPActivity" />
         <activity android:name=".ESActivity" />
-        <activity android:name=".ESstatusActivity"></activity>
+        <activity android:name=".ESstatusActivity" />
+        <activity android:name=".FileESActivity"></activity>
     </application>
 
 </manifest>
