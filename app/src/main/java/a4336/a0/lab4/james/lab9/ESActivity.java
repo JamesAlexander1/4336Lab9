@@ -26,8 +26,8 @@ public class ESActivity extends AppCompatActivity {
         goToESFileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                //Replace with ES code.
+                Intent intent = new Intent(ESActivity.this, FileESActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -20,7 +20,9 @@ public class WifiWrapper {
 
     public ArrayList<String> getAllAP(){
 
+       // manager.setWifiEnabled(true);
         List<ScanResult> scanresults = manager.getScanResults();
+
 
         ArrayList<String> results = convertList(scanresults);
 
@@ -29,7 +31,7 @@ public class WifiWrapper {
 
     private ArrayList<String> convertList(List<ScanResult> scans){
 
-        ArrayList<String> results = new ArrayList<>();
+        ArrayList<String> results = new ArrayList<String>();
 
         for(ScanResult scan : scans){
            results.add(scan.SSID + " signal strength: " + scan.frequency + " time: " + scan.timestamp);
@@ -37,6 +39,12 @@ public class WifiWrapper {
         }
 
         return results;
+    }
+    public int getWifiState(){
+        return manager.getWifiState();
+    }
+    public boolean startScan(){
+        return manager.startScan();
     }
 
 }
